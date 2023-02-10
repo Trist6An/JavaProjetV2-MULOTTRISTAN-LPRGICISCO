@@ -83,6 +83,7 @@ public class AffichageTable {
             System.exit(-1);
         }
 
+        //fermeture des liens vers la base de donnée
         try {
             connexion.close();
             stmt.close();

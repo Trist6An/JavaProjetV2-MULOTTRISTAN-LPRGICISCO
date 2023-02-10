@@ -59,6 +59,7 @@ public class LecteurBdd {
             System.exit(-1);
         }
 
+        //requete SQL
         String requeteInsertion = "INSERT INTO lecteurs (prenom, nom) " +
                 "VALUES ('" + prenom + "', '" + nom + "')";
 
