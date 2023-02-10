@@ -45,6 +45,7 @@ public class AffichageTable {
         System.out.println("\n -------------------------------- \n");
         try {
             monResultSet=stmt.executeQuery(affichageBdd);
+            System.out.println("Voici les lecteurs :");
             while (monResultSet.next()){
                 String prenom = monResultSet.getString("prenom");
                 String nom = monResultSet.getString("nom");
@@ -64,6 +65,7 @@ public class AffichageTable {
 
         try {
             monResultSet=stmt.executeQuery(affichageBdd);
+            System.out.println("Voici les livres :");
             while (monResultSet.next()){
                 String titre = monResultSet.getString("titre");
                 String auteur = monResultSet.getString("auteur");

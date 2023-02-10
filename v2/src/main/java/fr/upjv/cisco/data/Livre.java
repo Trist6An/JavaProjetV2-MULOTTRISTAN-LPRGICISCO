@@ -10,6 +10,7 @@ public class Livre {
     String genre;
     String description;
 
+    //constructeur livre
     public Livre(String titre, String auteur, String genre, String description) {
         this.titre = titre;
         this.auteur = auteur;
@@ -18,7 +19,7 @@ public class Livre {
     }
 
     public Livre(){
-        //scan du clavier
+        //scan du clavier pour chaque string
         Scanner scanner = new Scanner(System.in);
         System.out.println("Titre du livre: ");
         titre = scanner.nextLine();

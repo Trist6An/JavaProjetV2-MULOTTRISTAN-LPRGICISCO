@@ -9,15 +9,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); // initalisation du scanner
 
+        //création des listes livres et lecteurs
         ArrayList<Livre> livres = new ArrayList<>();
         ArrayList<Lecteur> lecteurs = new ArrayList<>();
 
-        //Bdd test = new Bdd();
 
         int choix = 0;
+
+        //boucle while pour faire un menu
         while (choix == 0) {
             System.out.println("Choisir une option");
             System.out.println("1 - Créer un livre");
@@ -44,6 +45,5 @@ public class Main {
             choix = 0;
             System.out.println("------------------------------------------------ \n");
         }
-
     }
 }
