@@ -10,7 +10,7 @@ public class Livre {
     String genre;
     String description;
 
-    //constructeur livre
+    //definission du constructeur Livre
     public Livre(String titre, String auteur, String genre, String description) {
         this.titre = titre;
         this.auteur = auteur;
@@ -18,6 +18,7 @@ public class Livre {
         this.description = description;
     }
 
+    //constructeur Livre sans paramètre
     public Livre(){
         //scan du clavier pour chaque string
         Scanner scanner = new Scanner(System.in);
@@ -33,6 +34,7 @@ public class Livre {
         System.out.println("Description du livre: ");
         description = scanner.nextLine();
 
+        //création de l'objet livreBdd
         LivreBdd livreBdd = new LivreBdd(titre, auteur, genre, description);
     }
 }

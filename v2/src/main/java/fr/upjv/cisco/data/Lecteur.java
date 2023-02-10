@@ -8,10 +8,13 @@ public class Lecteur {
     String prenom;
     String nom;
 
+    //constructeur Lecteur avec des arguments
     public Lecteur(String prenom, String nom) {
         this.prenom = prenom;
         this.nom = nom;
     }
+
+    //constructeur Lecteur sans argument
     public Lecteur(){
         Scanner scanner = new Scanner(System.in);
 

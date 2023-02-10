@@ -4,10 +4,12 @@ import java.sql.*;
 
 public class AffichageTable {
     public AffichageTable() {
+        //driver MySQL
         String driverMysql = "com.mysql.cj.jdbc.Driver";
         //url BDD
         String urlBDD = "jdbc:mysql://localhost:3306/mabd";
 
+        //gestion de l'exeption pour driver MySQL
         try {
             Class.forName(driverMysql);
             System.out.println("Chargement du driver mysql ok");
@@ -38,7 +40,7 @@ public class AffichageTable {
             e.printStackTrace();
             System.exit(-1);
         }
-
+        //requete pour l'affichage de la table lecteurs
         String affichageBdd = "SELECT * FROM lecteurs";
 
         ResultSet monResultSet = null;

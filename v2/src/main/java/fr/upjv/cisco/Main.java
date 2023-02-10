@@ -5,6 +5,7 @@ import fr.upjv.cisco.data.Lecteur;
 import fr.upjv.cisco.data.Livre;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -26,20 +27,27 @@ public class Main {
             System.out.println("3 - Afficher les livres et les lecteurs présent dans la base de donnée");
             System.out.println("4 - Quitter le programme");
             System.out.println("en attente de choix...");
-            choix = scanner.nextInt();
-            scanner.nextLine();
 
-            if (choix == 1){
+            //gestion de la saisie utilisateur pour eviter de faire planté le programme
+            try {
+                choix = scanner.nextInt();
+                scanner.nextLine(); //permet d'éviter une ligne vide
+            }catch (InputMismatchException e){
+                System.out.println("Merci de saisir un choix valide (1, 2, 3, 4)");
+                scanner.nextLine(); //vide le buffer
+            }
+
+            if (choix == 1) {
                 Livre livre = new Livre(); //création d'un livre
-            }else if (choix == 2){
+            } else if (choix == 2) {
                 Lecteur lecteur = new Lecteur(); //création d'un lecteur
-            }else if (choix == 3){
+            } else if (choix == 3) {
                 //affichage lecteur et livre
                 AffichageTable affichage = new AffichageTable();
-            }else if (choix == 4){
+            } else if (choix == 4) {
                 System.out.println("Programme quitté...");
                 System.exit(0);
-            }else if (choix > 4){
+            } else if (choix > 4) {
                 System.out.println("merci de renseigner un choix disponible");
             }
             choix = 0;
