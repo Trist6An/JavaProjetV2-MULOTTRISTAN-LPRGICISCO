@@ -19,6 +19,7 @@ Pour le programme:
   Ouvrir un terminal dans le dossier correspondant au fichier ".jar"  
   Lancer la commande java .jar "v2.jar  
   
+---------------------------------------------------------------------------------------------------
 Notice D'utilisation :  
   
 Programme :  
