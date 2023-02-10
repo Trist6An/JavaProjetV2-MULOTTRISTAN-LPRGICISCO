@@ -29,7 +29,11 @@ Programme :
       exemple :  
       pour créer un livre, il faut choisir 1.  
   2- création d'un livre ou d'un lecteur:  
-      il faudra noter en dessous de la catégories noté mettre nom que l'on souhaite au livre puis faire entrée pour valider la selection  
+      en dessous de chaque catégories, mettre nom que l'on souhaite au livre puis faire entrée pour valider la selection  
       exemple:   
       Titre du livre:   
       mettre le titre du livre  
+      Prénom du lecteur:  
+      mettre le prénom  
+  3- Afichage des données:  
+      pour afficher les données de la base, il suffit de faire le choix numéro 4
